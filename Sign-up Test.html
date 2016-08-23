@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	div {
+	    border: 1px solid aquamarine;
+	    background-color: aquamarine;
+	    width: 500px;
+	    margin: 10px;
+	    padding: 10px;
+	}
+	h3 {
+	    font-size: 33px;
+	    margin: 0;
+	    padding: 0;
+	}
+	.sub-header {
+	    margin: 0;
+	    padding: 0px;
+	    padding-bottom: 20px;
+	}
+	input[type=text] {
+	    margin: 0px;
+	    padding: 10px;
+	    font-size: 15px;
+	    border-radius: 3px;
+	    border: 1px solid black;
+	    margin-right: 10px;
+	    margin-bottom: 10px;
+	}
+	input[type=password] {
+	    margin: 0px;
+	    padding: 10px;
+	    font-size: 15px;
+	    border-radius: 3px;
+	    border: 1px solid black;
+	}
+	.info-list {
+	    margin-top: 20px;
+	    margin-bottom: 0;
+	}
+	select {
+	    padding: 5px;
+	}
+	a {
+	    text-decoration: none;
+	}
+	input[type=radio] {
+	    margin: 0;
+	    margin-top: 20px;
+	}
+	h6 {
+	    margin-top: 20px;
+	}
+	input[type=submit] {
+	    padding: 10px;
+	    width: 150px;
+	    border-radius: 3px;
+	    border: none;
+	    background-color: green;
+	    font-weight: bolder;
+	    color: white;
+	}
+</style>
+<body>
+	<div>
+	<h3>Sign Up</h3>
+	<h4 class="sub-header">It's free and always will be.</h4>
+	<form action="action_page.php">
+	<label>
+	<input type="text" name="firstname" placeholder="First Name">
+	<input type="text" name="lastname" placeholder="Last Name">
+	</label><br>
+	<input type="text" name="youremail" placeholder="Your Email"><br>
+	<input type="text" name="reenteremail" placeholder="Re-enter Email"><br>
+	<input type="password" name="psw" placeholder="New Password"><br>
+	<h4 class="info-list">Birthday:</h4><br>
+	<select name="Month">
+		<option value="Month" selected>Month:</option>
+		<option value="January">January</option>
+		<option value="February">February</option>
+		<option value="March">March</option>
+	</select>
+	<select name="Day">
+		<option value="Day" selected>Day:</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+	</select>
+	<select name="Year">
+		<option value="Year" selected>Year:</option>
+		<option value="2014">2014</option>
+		<option value="2015">2015</option>
+		<option value="2016">2016</option>
+	</select>
+	<a href="">Why do I need to provide my birthday?</a><br>
+	<input type="radio" name="gender" value="Female">Female
+	<input type="radio" name="gender" value="Male">Male<br>
+	<h6>By clicking Sign Up, you agree to out <a href="">Terms</a> and that you have read our <a href="">Data Use Policy</a>, including our <a href="">Cookie Use</a>.</h6><br>
+	<input type="submit" value="Sign Up">
+	</form>
+	</div>
+</body>
+</html>
